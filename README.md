@@ -30,7 +30,7 @@ Kevin Flow Block will be called in the Risk Flow after  ***Scoring-Limit Model**
 
 Supported file formats: `PDF`, `JPEG`, `TIFF`, `PNG`.
 
-For full flow, see [Finea flow- Kevin last chance](https://wiki.sunfinance.group/display/RT/v1.1+Finea+Flow+-+Kevin+Last+Chance).
+For full flow, see [Finea flow - Kevin last chance](https://wiki.sunfinance.group/display/RT/v1.1+Finea+Flow+-+Kevin+Last+Chance).
 
 
 ## Whats new in Front-office
@@ -50,13 +50,17 @@ Statement upload will be applied during registration and during repeated applica
 
 As been mentioned in [Overall information](#Overal-information) paragraph in 2nd case description once client uploaded bank statement in back office automatically creates task named "***Bank Statement verification***" for agent for manual check. Task UI and scenarios are described in [Bank statement verification (Finea&DaliDali specific)](https://wiki.sunfinance.group/display/countries/%5BLMS%5D+Applications#id-%5BLMS%5DApplications-Applicationstatuses.).
 
-For application's entity been added few more statuses, so agents can be aware of what is happening with application. Also more information about application statuses and flow can be found in [[LMS] Applications](https://wiki.sunfinance.group/display/countries/%5BLMS%5D+Applications#id-%5BLMS%5DApplications-Applicationstatuses.)
-<u>*New statuses*:
+For application's entity been added few more statuses, so agents can be aware of what is happening with application. 
+
+*New statuses*:
 * `Bank statement request`;
 * `Bank statement provided`;
 * `Bank statement manual upload`;
 * `Bank statement check`;
 * `Bank statement confirmed`;
+
+Also more information about application statuses and flow can be found in [[LMS] Applications](https://wiki.sunfinance.group/display/countries/%5BLMS%5D+Applications#id-%5BLMS%5DApplications-Applicationstatuses.)
+
 
 
 In back office is added new document type named  `bank-statement`  which will be displayed in back office after client clicked on "*Pievienot documentus*" button, chose file and uploaded file. File will be available in client's card in "**Documents**" tab and in "**Documents**" section in common section list.
