@@ -22,7 +22,7 @@ This feature is pretty same as in Salem's product, the difference is that on Fin
 
 **1st case**:
 
-Kevin Flow Block will be called in the Risk Flow after  ***Scoring-Limit Model***. Then If  Limit Model returned  ***different_bank_account_needed = 1*** for client will be shown Kevin with Widget where he will need to try another bank and get authorized with it. If the client pass Kevin again, then scraped data needs gets stored in DB. Then application returnes to the ***Scoring-Limit Model*** and then it can either ask to pass Kevin with another account or ***continue or reject*** application according to the existing logic.
+Kevin Flow Block will be called in the Risk Flow after  ***Scoring-Limit Model***. Then If  Limit Model returned  ***different_bank_account_needed = 1*** for client will be shown Kevin with Widget where he will need to try another bank and get authorized with it. If the client pass Kevin again, then scraped data will stored in DB. Then application returns to the ***Scoring-Limit Model*** and then it can either ask to pass Kevin with another account or ***continue or reject*** application according to the existing logic.
 
 **2nd case**:
 
