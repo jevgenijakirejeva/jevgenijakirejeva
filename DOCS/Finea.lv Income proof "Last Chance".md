@@ -22,11 +22,11 @@ This feature is pretty same as in Salem's product, the difference is that on Fin
 
 **1st case**:
 
-Kevin Flow Block will be called in the Risk Flow after  ***Scoring-Limit Model***. Then If  Limit Model returned  ***different_bank_account_needed = 1*** for client will be shown a message that he needs to try another bank account. So for client will be shown Kevin with Widget where he will need to get authorized. If the client pass Kevin again, then scraped data needs to be stored in DB. Then application should be returned to the  ***Scoring-Limit Model*** and then it can either ask to pass Kevin with another account or ***continue or reject***  application according to the existing logic.
+Kevin Flow Block will be called in the Risk Flow after  ***Scoring-Limit Model***. Then If  Limit Model returned  ***different_bank_account_needed = 1*** for client will be shown a message that he needs to try another bank account. So for client will be shown Kevin with Widget where he will need to get authorized. If the client pass Kevin again, then scraped data needs gets stored in DB. Then application returnes to the ***Scoring-Limit Model*** and then it can either ask to pass Kevin with another account or ***continue or reject*** application according to the existing logic.
 
 **2nd case**:
 
-Kevin Flow Block will be called in the Risk Flow after  ***Scoring-Limit Model***. Then If Limit Model provided  key-value indicating to that  ***Manual Document Upload***  is expected from customer  ***bank_statement_upload_needed=1*** , client will be asked to upload a bank statement in front office and after that in Back Office will be generated a task for Bank Statement verification.
+Kevin Flow Block will be called in the Risk Flow after  ***Scoring-Limit Model***. Then If Limit Model provided  key-value indicating to that ***Manual Document Upload*** is expected from customer ***bank_statement_upload_needed=1***, client will be asked to upload a bank statement in front office and after that in Back Office will be generated a task for Bank Statement verification.
 
 Supported file formats: `PDF`, `JPEG`, `TIFF`, `PNG`.
 
