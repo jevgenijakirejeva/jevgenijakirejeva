@@ -20,3 +20,5 @@ In Back Office is added option to disable client's profile by clicking on `DISAB
 1. Open needed client's profile in Back office;
 2. Click on `DISABLE` button in the upper right corner;
 3. Confirm the action;
+
+<img src="https://github.com/jevgenijakirejeva/jevgenijakirejeva/blob/main/DOCS/SUPPORT_PROCEDURES/IMG/Disable-1.png" width="500" height="400"><img src="https://github.com/jevgenijakirejeva/jevgenijakirejeva/blob/main/DOCS/SUPPORT_PROCEDURES/IMG/Disable-2.png" width="500" height="400">
