@@ -11,7 +11,7 @@ This document includes several topics, for your convenience most important theme
 <a id="Overal-information"></a>
 To improve scoring process and get most accurate data from customers, is improved application submit process in the following way:
 
- *Once client submits an application and scoring process is finished on risk side, given not enough income for particular loan is found in KIB income and bank statement data, Risk team Instead of reject will ask customers to submit another bank statement of another bank. The idea is that client will have option to use another bank with salary/additional income, what will gives us more chance for evaluation.*
+*Once client submits an application and scoring process is finished on risk side, given not enough income for particular loan is found in KIB income and bank statement data, Risk team Instead of reject will ask customers to submit another bank statement of another bank. The idea is that client will have option to use another bank with salary/additional income, what will gives us more chance for evaluation.*
 
 This feature is pretty same as in Salem's product, the difference is that on Finea and DaliDali we can offer two options based on Risk's Limit Model answer:
 * Pass Kevin again with another bank;
@@ -61,8 +61,7 @@ For application's entity been added few more statuses, so agents can be aware of
 * `Bank statement check`;
 * `Bank statement confirmed`;
 
-Also more information about application statuses and flow can be found in [[LMS] Applications](https://wiki.sunfinance.group/display/countries/%5BLMS%5D+Applications#id-%5BLMS%5DApplications-Applicationstatuses.)
-
+Full information about application statuses and flow can be found in [[LMS] Applications](https://wiki.sunfinance.group/display/countries/%5BLMS%5D+Applications#id-%5BLMS%5DApplications-Applicationstatuses.)
 
 
 In back office is added new document type named  `bank-statement`  which will be displayed in back office after client clicked on "*Pievienot documentus*" button, chose file and uploaded file. File will be available in client's card in "**Documents**" tab and in "**Documents**" section in common section list.
