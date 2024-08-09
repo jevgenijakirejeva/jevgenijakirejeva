@@ -39,7 +39,7 @@ For full flow, see [Finea flow - Kevin last chance](https://wiki.sunfinance.grou
 Depending on what Limit Model returned, been integrated in client's flow two web pages: 
 * Bank statement submission where is shown only Kevin's widget;
 *  Bank statement manual upload which is absolutely new one and where are displayed: clear instructions, an upload button, and options for the user to view, remove, or add more files before proceeding;
-> In case if been asked to pass Kevin again, client will see page [Bank statement submission](https://wiki.sunfinance.group/display/RD/Finea+flow?preview=/465422100/530200208/Screenshot%202024-07-16%20at%2011.01.18.png#4654221003060912956e645c98a8c2e9a9edc2223);
+> In case if been asked to pass Kevin again, client will see the page [Bank statement submission](https://wiki.sunfinance.group/display/RD/Finea+flow?preview=/465422100/530200208/Screenshot%202024-07-16%20at%2011.01.18.png#4654221003060912956e645c98a8c2e9a9edc2223);
 
 > In case when Limit Model returned that client has to upload bank statement in front office client will see [Bank statement manual upload](https://wiki.sunfinance.group/display/RD/Finea+flow?preview=/465422100/530200208/Screenshot%202024-07-16%20at%2011.01.18.png#4654221003060912956e645c98a8c2e9a9edc2223) page;
 
