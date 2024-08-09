@@ -6,7 +6,10 @@ In Back Office is added option to disable client's profile by clicking on `DISAB
 * In case if client has unpaid loans, profile cannot be disabled and reporter has to be informed;
   
 * In case when client has closed agreements/loans (`PAID`, `TERMINATED`, `CANCELLED`, `ABORTED`) double check is there any not allocated amount;
-  * If yes, ask reporter is money been retuned to client.
+  * If yes, ask reporter is money been retuned to client. After cconfirmation disable profile;
+    > In case if money wasn't returned and client is alright with that, disable profile.
+    
+    > In case if money wasn't returned and client is not satisfied with that, agent has to retund and then disable profile.
   * If no, disable profile;
     
 * In case when client's agreement/loan is sold, need to confirm from reporter did this client paid all debts in third party company and no further manipulations with profile, loan and etc. will not happen);
