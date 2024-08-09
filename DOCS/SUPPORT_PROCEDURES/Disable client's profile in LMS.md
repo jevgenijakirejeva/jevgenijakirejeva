@@ -15,5 +15,5 @@ In Back Office is added option to disable client's profile by clicking on `DISAB
 
 ### How to disable proofile
 1. Open needed client's profile in Back office;
-2. Click on `DISABLE` in the upper right corner;
+2. Click on `DISABLE` button in the upper right corner;
 3. Confirm the action;
