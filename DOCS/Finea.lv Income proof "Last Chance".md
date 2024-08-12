@@ -2,16 +2,16 @@
 This document includes several topics, for your convenience most important themes are highlighted:
 * [Overal information](#Overal-information)
 	*  [How it works](#How-it-works)
-* [Whats new in Front-office](#Whats-new-in-Front-office)
-* [Whats new in Back-office](#Whats-new-in-Back-office)
+* [Changes in Front-office](#Changes-in-Front-office)
+* [Changes in Back-office](#Changes-in-Back-office)
 * [Demo](#Demo)
 * [Related articles](#Related-articles)
 
 ## Overall information 
 <a id="Overal-information"></a>
-To improve scoring process and get most accurate data from customers, is improved application submit process in the following way:
+To improve scoring process and get most accurate data from customers been made some improvements in application submit process. The idea is that client will have option to use another bank with salary/additional income, what will gives us more chance for evaluation.
 
-*Once client submits an application and scoring process is finished on risk side, given not enough income for particular loan is found in KIB income and bank statement data, Risk team Instead of reject will ask customers to submit another bank statement of another bank. The idea is that client will have option to use another bank with salary/additional income, what will gives us more chance for evaluation.*
+*Once client submits an application and scoring process is finished on the risk side, and given not enough income for particular loan is found in KIB income and bank statement data, Risk team Instead of reject will ask customers to manually submit bank statement or authorize via Kevin with another bank.*
 
 This feature is pretty same as in Salem's product, the difference is that on Finea and DaliDali we can offer two options based on Risk's Limit Model answer:
 * Pass Kevin again with another bank;
@@ -19,22 +19,19 @@ This feature is pretty same as in Salem's product, the difference is that on Fin
 ---
 ### How it works:
 <a id="How-it-works"></a>
+Kevin Flow Block is called in the Risk Flow after  ***Scoring-Limit Model***.
 
-**1st case**:
+* If  Limit Model returned  ***different_bank_account_needed = 1*** for client will be shown Kevin with Widget where he will need to try another bank and get authorized with it. If the client pass Kevin again, then scraped data will stored in DB. Then application returns to the ***Scoring-Limit Model*** and then it can either ask to pass Kevin with another account or ***continue or reject*** application according to the existing logic.
 
-Kevin Flow Block will be called in the Risk Flow after  ***Scoring-Limit Model***. Then If  Limit Model returned  ***different_bank_account_needed = 1*** for client will be shown Kevin with Widget where he will need to try another bank and get authorized with it. If the client pass Kevin again, then scraped data will stored in DB. Then application returns to the ***Scoring-Limit Model*** and then it can either ask to pass Kevin with another account or ***continue or reject*** application according to the existing logic.
-
-**2nd case**:
-
-Kevin Flow Block will be called in the Risk Flow after  ***Scoring-Limit Model***. Then If Limit Model provided  key-value indicating to that ***Manual Document Upload*** is expected from customer ***bank_statement_upload_needed=1***, client will be asked to upload a bank statement in front office and after that in Back Office will be generated a task for Bank Statement verification.
+* If Limit Model provided  key-value indicating to that ***Manual Document Upload*** is expected from customer ***bank_statement_upload_needed=1***, client will be asked to upload a bank statement in front office and after that in Back Office will be generated a task for Bank Statement verification.
 
 Supported file formats: `PDF`, `JPEG`, `TIFF`, `PNG`.
 
 For full flow, see [Finea flow - Kevin last chance](https://wiki.sunfinance.group/display/RT/v1.1+Finea+Flow+-+Kevin+Last+Chance).
 
 
-## Whats new in Front-office
-<a id="Whats-new-in-Front-office"></a>
+## Changes in Front-office
+<a id="Changes-in-Front-office"></a>
 
 Depending on what Limit Model returned, been integrated in client's flow two web pages: 
 * Bank statement submission where is shown only Kevin's widget;
@@ -47,8 +44,8 @@ Statement upload will be applied during registration and during repeated applica
 
 For full client's registration flow, see [Finea.lv Customer journey](https://wiki.sunfinance.group/display/countries/Finea.lv+Customer+Journey) and [DaliDalii.lv Customer journey](https://wiki.sunfinance.group/display/countries/DaliDali.lv+Customer+journey).
 
-## Whats new in Back-office
-<a id="Whats-new-in-Back-office"></a>
+## Changes in Back-office
+<a id="Changes-in-Back-office"></a>
 
 As been mentioned in [Overall information](#Overal-information) paragraph in 2nd case description once client uploaded bank statement in back office automatically creates task named "***Bank Statement verification***" for agent for manual check. Task UI and scenarios are described in [Bank statement verification (Finea&DaliDali specific)](https://wiki.sunfinance.group/display/countries/%5BLMS%5D+Applications#id-%5BLMS%5DApplications-Applicationstatuses.).
 
